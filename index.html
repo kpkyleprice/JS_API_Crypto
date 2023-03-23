@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="main.css">
+    <title>Crypto</title>
+</head>
+<body>
+  <div class="title"> 
+    <nav class="navbar navbar-expand-lg navbar py-1 fixed-top">
+    <a href="index.html" class="navbar-brand">Crypto Prices</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+        <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link" id="links">Home</a>
+            <a href="index.html" class="nav-item nav-link" id="links">About</a>
+            <a href="index.html" class="nav-item nav-link" id="links">More</a>
+        </div>
+    </div>
+  </nav>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar py-1 fixed-top">
+        <a href="index.html" class="navbar-brand">Crypto Prices</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" class="nav-item nav-link">About</a>
+                <a href="index.html" class="nav-item nav-link">More</a>
+            </div>
+        </div>
+</nav>
+    <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="topcoins" onclick="event.stopPropagation(); clickedEvent(this.id, event, BTC_text)">
+              <button onclick="hiddenText()" type="submit" class="bit" id="info">
+            <img src="../Images/bitcoin.jpg" id="BTC" class="logo" alt="bitcoin" style="width: 50%;">
+            <div id="bit_details">
+              <p class="cryptodesc">Bitcoin is the first and most widely recognized cryptocurrency. It enables peer-to-peer exchange of value in the digital realm through the use of a decentralized protocol, cryptography, and a mechanism to achieve global consensus on the state of a periodically updated public transaction ledger called a 'blockchain.'</p>
+              <p>Bitcoin (BTC) Current price:</p>
+              <span ></span>
+              <h3 id="BTC_text"></h3>
+            </div>
+        </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="topcoins" onclick="event.stopPropagation(); clickedEvent(this.id, event)">
+              <button onclick="hiddenTexteth()" type="submit" class="eth" id="info">
+                <img src="../Images/eth.jpg" id="ETH" class="logo" alt="ethereum" style="width: 50%;">
+                <div id="eth_details">
+                  <p class="cryptodesc">Ethereum is a technology for building apps and organizations, holding assets, transacting and communicating without being controlled by a central authority.</p>
+                  <p>Ethereum (ETH) Current price:</p>
+                  <span ></span>
+              <h3 id="ETH_text"></h3>
+                </div>
+            </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="topcoins" onclick="event.stopPropagation(); getInfo(this.id, event)">
+              <button onclick="hiddenTexttlite()" type="submit" class="teth" id="info">
+                <img src="../Images/litecoin.jpg" id="LTC" class="logo" alt="litecoin" style="width: 50%;">
+                <div id="lite_details">
+                  <p class="cryptodesc">Litecoin (LTC) is a cryptocurrency that was designed to provide fast, secure and low-cost payments by leveraging the unique properties of blockchain technology.</p>
+                  <p>Litecoin (LTC) Current price:</p>
+                  <span ></span>
+                  <h3 id="LITE_text"></h3>
+                </div>
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="memecoins" onclick="event.stopPropagation(); getInfo(this.id, event)">
+              <button onclick="hiddenTextdoge()" type="submit" class="doge" id="info">
+                <img src="../Images/doge.jpg" id="DOGE" class="logo" alt="dogecoin" style="width: 50%;">
+                <div id="doge_details">
+                  <p class="cryptodesc">Dogecoin is a lighthearted alternative to traditional cryptocurrencies like Bitcoin in 2013. The name and Shiba Inu logo are based on a meme.</p>
+                  <p>Dogecoin (DOGE) Current price:</p>
+                  <span ></span>
+                  <h3 id="DOGE_text"></h3>
+                </div>
+            </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="memecoins" onclick="event.stopPropagation(); getInfo(this.id, event)">
+              <button onclick="hiddenTextpizza()" type="submit" class="ape" id="info">
+                <img src="../Images/pizza.jpg" id="PIZZA" class="logo" alt="pizzacoin" style="width: 50%;">
+                <div id="pizza_details">
+                  <p class="cryptodesc">PizzaCoin (PIZZA) is a cryptocurrency . Users are able to generate PIZZA through the process of mining. PizzaCoin has a current supply of 10,127,917.1843608 with 1,377,917.18436082 in circulation.</p>
+                  <p>PizzaCoin (PIZZA) Current price:</p>
+                  <span ></span>
+                  <h3 id="PIZZA_text"></h3>
+                </div>
+            </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="memecoins" onclick="event.stopPropagation(); getInfo(this.id, event)">
+              <button onclick="hiddenTextkick()" type="submit" class="shiba" id="info">
+                <img src="../Images/kick.jpg" id="KICK" class="logo" alt="kickcoin" style="width: 50%;">
+                <div id="kick_details">
+                  <p class="cryptodesc">Kick Ecosystem describes itself as a set of FinTech tools that form a “one-stop-shop” for every user from all over the world. These tools aim to cover all financial needs. KickToken acts as a central currency, which resides on the Ethereum platform.</p>
+                  <p>Kickcoin (KICK) Current price:</p>
+                  <span ></span>
+                  <h3 id="KICK_text"></h3>
+                </div>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h1 class="gain">Buy these in 2023</h1> 
+          <i class="fa fa-thumbs-up" id="thumb" aria-hidden="true" style="color: green;"></i>
+        </div>
+        <div class="col-6">
+          <h1 class="loss">Don't buy these in 2023</h1>
+          <i class="fa fa-thumbs-down" id="thumb" aria-hidden="true" style="color: red;"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="goodcoins">
+            <li class="like0">Bitcoin (BTC)</li>
+            <li class="like1">Ethereum (ETH)</li>
+            <li class="like1">DashCoin (DSH)</li>
+            <li class="like1">OxyCoin (OXY)</li>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="badcoins">
+            <li class="like0">Cloud (CLD)</li>
+            <li class="like1">NovaCoin (NVC)</li>
+            <li class="like1">SmileyCoin (SMLY)</li>
+            <li class="like1">AureusCoin (AURS)</li>
+          </div>
+        </div>
+      </div>
+      <script src="main.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+.title {
+    padding-left: 100px;
+}
+.col-6 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.col-4 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    opacity:0.3;
+    transition: 1s ease;
+    }
+    
+.logo:hover{
+    opacity:1;
+    transition: 1s ease;
+    }
+.topcoins {
+    padding-top: 70px;
+}
+.memecoins {
+    padding-top: 50px;
+}
+#info {
+    background-color: transparent;
+    border: 0;
+}
+.navbar-brand {
+    color: black;
+    padding-left: 20px;
+}
+.cryptodesc {
+    padding-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.gain {
+    font-weight: bolder;
+    color: green;
+}
+.loss {
+    font-weight: bolder;
+    color: red;
+}
+#thumb {
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.like1 {
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.like0 {
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
